@@ -1,0 +1,85 @@
+html {
+	font-size: 18px;
+	line-height: 1.4;
+	font-family: "Helvetica", sans-serif;
+}
+
+#banner, #boxcontainer, #content, footer {
+	width: 960px;
+	margin: 0 auto;
+}
+
+/* Nav and Hero Image */
+
+header {
+	background-image: url(../images/glasses-bg.png);
+	background-size: cover;
+	background-position: -250px;
+	height: 31rem;
+	padding-top: 1rem;
+}
+
+#banner {
+	background-color: cadetblue;
+	display: flex;
+	justify-content: space-between;
+}
+
+#banner a {
+	color: white;
+	text-decoration: none;
+}
+
+#logo img {
+	height: 1.5rem;
+	padding-left: 2rem;
+	padding-right: 1rem;
+}
+
+#logo {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+nav a {
+	padding: 1rem 2rem;
+}
+
+/* Banner slogan */
+
+#boxcontainer {
+	display: flex;
+	justify-content: flex-end;
+}
+
+#box {
+	display: inline-block;
+	background-color: white;
+	margin-top: 10rem;
+	margin-right: -2rem;
+}
+
+h1 {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 2rem;
+	line-height: 1.2rem;
+	padding: 1.5rem 5rem;
+}
+
+footer {
+	background-color: azure;
+}
+
+
+
+
+
