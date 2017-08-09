@@ -22,6 +22,10 @@ header {
 	padding-top: 1rem;
 }
 
+.show {
+		display: none;
+	}
+
 #banner {
 	background-color: cadetblue;
 	display: flex;
@@ -135,9 +139,14 @@ h1 {
 	margin-bottom: 1rem;
 }
 
+.column p {
+	margin-bottom: 5rem;
+}
+
+/*Footer*/
+
 footer {
 	background-color: azure;
-	margin-top: 5rem;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
@@ -148,7 +157,113 @@ footer img {
 	padding: 4rem 1rem 4rem 4rem;
 }
 
+/* Media Query Tablet Landscape*/
 
+@media only screen and (max-width: 960px) {
+	
+	#banner, #boxcontainer, #content, footer {
+		width: 100%;
+	}
+	
+	header {
+		height: 22rem;
+		padding-top: 0rem;
+		background-position: -180px;
+	}
+	
+	#box {
+		margin-top: 5rem;
+		margin-right: 2rem;
+	}
+
+	h1 {
+		font-size: 1.33rem;
+		padding: 1rem 4rem;
+	}
+}
+
+/* Media Query Mobile */
+
+@media only screen and (max-width: 711px) {
+	
+	header {
+		height: 17rem;
+		background-position: 20%;
+	}
+	
+	.hide {
+		display: none;
+	}
+	
+	.show {
+		display: block;
+	}
+	
+	a {
+		display: block;
+	}
+	
+	#box {
+		width: 75%;
+		margin: 10.5rem auto 0 auto;
+		text-align: center;
+	}
+	
+	h1 {
+		font-size: 1rem;
+		padding: .75rem 2rem;
+	}
+	
+	#icons {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 3.77rem 0;
+	}
+	
+	.icon {
+		justify-content: center;
+		align-items: center;
+		height: 8rem;
+		text-align: center;
+		padding: .77rem 0;
+		width: 5rem;
+	}
+	
+	.icon img {
+		padding-bottom: 1rem;
+	}
+	
+	#mission {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.column {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+	}
+
+	.heading {
+		width: 100%;
+		font-size: 1rem;
+		margin-bottom: 1rem;
+	}
+	
+	.column p {
+		margin: 0 1rem 4rem 1rem;
+	}
+	
+	footer img {
+		padding-left: 0;
+		padding-right: 0;
+		margin: 0 auto;
+	}
 
 
 
